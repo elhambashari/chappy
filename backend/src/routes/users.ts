@@ -20,7 +20,6 @@ router.get("/", async (req, res) => {
     });
 
     const result = await db.send(command);
-    console.log("📊 Filtered user profiles:", JSON.stringify(result.Items, null, 2));
 
     res.json(result.Items);
   } catch (error) {
@@ -32,8 +31,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-
-console.log("🟢 POST /api/users route loaded");
 
 router.post("/", async (req, res) => {
   console.log("📩 Received POST /api/users request");

@@ -3,7 +3,7 @@ import express from "express";
      import users from "./routes/users.js";
      import channels from "./routes/channels.js";
      import messages from "./routes/messages.js";
-	
+	 import auth from "./routes/auth.js"; 
 
 
 
@@ -17,7 +17,7 @@ import express from "express";
      console.log("✅ Users route loaded"); 
      app.use("/api/channels", channels);
      app.use("/api/messages", messages);
-	
+	 app.use("/api/auth", auth); 
 
      
      app.use((req, res, next) => {
