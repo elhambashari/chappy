@@ -28,7 +28,7 @@ router.post("/login", async (req, res) => {
     const result = await db.send(command);
 
     if (!result.Item) {
-      console.log("❌ User not found:", username);
+      console.log(" User not found:", username);
       return res.status(404).json({ error: "User not found" });
     }
 

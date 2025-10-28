@@ -33,7 +33,7 @@ router.get("/", async (req, res) => {
 
 
 router.post("/", async (req, res) => {
-  console.log("📩 Received POST /api/users request");
+  console.log(" Received POST /api/users request");
 
   try {
     const { username, email, password } = req.body;
