@@ -7,15 +7,12 @@ import express from "express";
 	
 
 
-
-
  const app = express();
 
  app.use(express.json());
 
      
  app.use("/api/users", users);
- console.log("✅ Users route loaded"); 
  app.use("/api/channels", channels);
  app.use("/api/messages", messages);
  app.use("/api/auth", auth); 
