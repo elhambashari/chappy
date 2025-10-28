@@ -7,7 +7,7 @@ const router = express.Router();
 
 // LOGIN route
 router.post("/login", async (req, res) => {
-  console.log("📩 Received POST /api/auth/login request");
+  console.log("Received POST /api/auth/login request");
 
   try {
     const { username, password } = req.body;
