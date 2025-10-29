@@ -26,7 +26,7 @@ router.get("/", async (req, res) => {
     console.error("❌ Error fetching user profiles:", error);
     res.status(500).json({
       error: "Failed to fetch user profiles",
-      details: error instanceof Error ? error.message : error,
+      details: error,
     });
   }
 });
